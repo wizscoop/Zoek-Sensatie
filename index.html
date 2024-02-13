@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoek sensatie in de buurt</title>
     <link rel="stylesheet" href="index.css">
+    <script>
+        navigator.geolocation.getCurrentPosition((position) => {
+            let {
+              latitude,
+              longitude
+            } = position.coords;
+          });
+    </script>
 </head>
 <body>
     <h2>Zoek Sensatie!!</h2>
